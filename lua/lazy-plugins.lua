@@ -9,6 +9,7 @@
 --    :Lazy update
 --
 require('lazy').setup({
+  'nvim-treesitter/nvim-treesitter-context',
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   {
     'numToStr/Comment.nvim',
