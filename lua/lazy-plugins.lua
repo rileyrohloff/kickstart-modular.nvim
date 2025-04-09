@@ -9,6 +9,13 @@
 --    :Lazy update
 --
 require('lazy').setup({
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    config = true,
+    -- use opts = {} for passing setup options
+    -- this is equivalent to setup({}) function
+  },
   'nvim-treesitter/nvim-treesitter-context',
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   {
