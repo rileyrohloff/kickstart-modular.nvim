@@ -8,7 +8,9 @@
 --  To update plugins you can run
 --    :Lazy update
 --
+local obsidian_config = require 'custom.plugins.obsidian_plugin'
 require('lazy').setup({
+  obsidian_config,
   {
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
