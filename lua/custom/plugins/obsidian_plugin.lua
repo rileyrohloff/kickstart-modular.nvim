@@ -43,6 +43,7 @@ return {
       log_level = vim.log.levels.INFO,
 
       daily_notes = {
+        default = '',
         -- Optional, if you keep daily notes in a separate directory.
         folder = 'notes/dailies',
         -- Optional, if you want to change the date format for the ID of daily notes.
@@ -66,30 +67,30 @@ return {
       -- Optional, configure key mappings. These are the defaults. If you don't want to set any keymappings this
       -- way then set 'mappings = {}'.
       mappings = {
-        -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
-        ['of'] = {
-          action = function()
-            return require('obsidian').util.gf_passthrough()
-          end,
-          opts = { noremap = false, expr = true, buffer = true },
-        },
-        ['os'] = {
-          action = '<cmd>ObsidianSearch<Enter>',
-        },
-        -- Toggle check-boxes.
+        --   -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
+        --   ['<leader>of'] = {
+        --     action = function()
+        --       return require('obsidian').util.gf_passthrough()
+        --     end,
+        --     opts = { noremap = false, expr = true, buffer = true },
+        --   },
+        --   ['<leader>os'] = {
+        --     action = '<cmd>ObsidianSearch<Enter>',
+        --   },
+        --   -- Toggle check-boxes.
         ['<leader>ox'] = {
           action = function()
             return require('obsidian').util.toggle_checkbox()
           end,
           opts = { buffer = true },
         },
-        -- Smart action depending on context, either follow link or toggle checkbox.
-        ['<cr>'] = {
-          action = function()
-            return require('obsidian').util.smart_action()
-          end,
-          opts = { buffer = true, expr = true },
-        },
+        --   -- Smart action depending on context, either follow link or toggle checkbox.
+        --   ['<cr>'] = {
+        --     action = function()
+        --       return require('obsidian').util.smart_action()
+        --     end,
+        --     opts = { buffer = true, expr = true },
+        --   },
       },
 
       -- Where to put new notes. Valid options are

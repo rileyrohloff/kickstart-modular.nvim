@@ -21,5 +21,9 @@ require 'lazy-plugins'
 -- set colorscheme
 vim.cmd.colorscheme 'dracula'
 
+-- needed for obsidian ui features to work
+vim.opt.conceallevel = 1
+vim.opt.shiftwidth = 2
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
