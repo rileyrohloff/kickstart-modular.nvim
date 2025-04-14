@@ -12,6 +12,17 @@ local obsidian_config = require 'custom.plugins.obsidian_plugin'
 require('lazy').setup({
   obsidian_config,
   {
+    'nvim-tree/nvim-tree.lua',
+    version = '*',
+    lazy = false,
+    dependencies = {
+      'nvim-tree/nvim-web-devicons',
+    },
+    config = function()
+      require('nvim-tree').setup {}
+    end,
+  },
+  {
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
     config = true,

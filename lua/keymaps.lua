@@ -11,6 +11,9 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- obsidian
 vim.keymap.set('n', '<leader>os', '<cmd>ObsidianSearch<Enter>', { desc = 'Search files in obsidian vault' })
 
+-- file tree explorer
+vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeFindFileToggle<Enter>', { desc = 'Toggle File tree explorer' })
+
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
