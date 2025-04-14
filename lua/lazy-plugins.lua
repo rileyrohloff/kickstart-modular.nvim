@@ -62,11 +62,6 @@ require('lazy').setup({
   },
   -- autocompletion
   -- Autocompletion
-  { 'hrsh7th/nvim-cmp' },
-  { 'hrsh7th/cmp-nvim-lsp' },
-  { 'L3MON4D3/LuaSnip' },
-  { 'saadparwaiz1/cmp_luasnip' },
-
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
