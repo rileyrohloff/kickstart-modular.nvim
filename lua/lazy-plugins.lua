@@ -9,8 +9,10 @@
 --    :Lazy update
 --
 local obsidian_config = require 'custom.plugins.obsidian_plugin'
+local barbar_config = require 'custom.plugins.barbar_plugin'
 require('lazy').setup({
   obsidian_config,
+  barbar_config,
   {
     'nvim-tree/nvim-tree.lua',
     version = '*',
