@@ -68,12 +68,12 @@ return {
       -- way then set 'mappings = {}'.
       mappings = {
         --   -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
-        --   ['<leader>of'] = {
-        --     action = function()
-        --       return require('obsidian').util.gf_passthrough()
-        --     end,
-        --     opts = { noremap = false, expr = true, buffer = true },
-        --   },
+        ['<leader>of'] = {
+          action = function()
+            return require('obsidian').util.gf_passthrough()
+          end,
+          opts = { noremap = false, expr = true, buffer = true },
+        },
         --   ['<leader>os'] = {
         --     action = '<cmd>ObsidianSearch<Enter>',
         --   },
