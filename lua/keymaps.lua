@@ -5,6 +5,10 @@
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- tab bar navigation
+vim.keymap.set('n', '<leader>bb', '<Cmd>BufferPrevious<CR>', { desc = 'go to next tab' })
+vim.keymap.set('n', '<leader>bn', '<Cmd>BufferNext<CR>', { desc = 'go to previous tab' })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
