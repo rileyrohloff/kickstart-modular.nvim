@@ -10,9 +10,12 @@
 --
 local obsidian_config = require 'custom.plugins.obsidian_plugin'
 local barbar_config = require 'custom.plugins.barbar_plugin'
+local terragrunt_config = require 'custom.plugins.terragrunt-ls'
 require('lazy').setup({
   obsidian_config,
   barbar_config,
+  terragrunt_config,
+  'towolf/vim-helm',
   {
     'nvim-tree/nvim-tree.lua',
     version = '*',
