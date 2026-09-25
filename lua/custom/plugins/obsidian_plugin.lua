@@ -26,8 +26,8 @@ return {
       -- current markdown file being edited.
       workspaces = {
         {
-          name = 'Chargezoom',
-          path = '~/Documents/Chargezoom',
+          name = 'Docs',
+          path = '~/Documents',
         },
       },
 

@@ -11,7 +11,9 @@
 local obsidian_config = require 'custom.plugins.obsidian_plugin'
 local barbar_config = require 'custom.plugins.barbar_plugin'
 local terragrunt_config = require 'custom.plugins.terragrunt-ls'
+local git_link = require 'custom.plugins.git-link'
 require('lazy').setup({
+  git_link,
   obsidian_config,
   barbar_config,
   terragrunt_config,
